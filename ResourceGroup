@@ -1,0 +1,13 @@
+###Resource Group Create###
+
+New-AzResourceGroup -Name "LearningCloudwitharjun" -Location "EastUS"
+
+##List of Resourcegroup
+Get-AzResourceGroup |Select ResourceGroupName
+
+##update resource group
+set-AzResourceGroup -Name "LearningCloudwitharjun"  -Tag @{Environment="Dev"; Owner="ITTeam"}
+
+##removeResoruce group
+
+Remove-resourcegroup -Name "LearningCloudwitharjun"  -confirm:$false
