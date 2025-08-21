@@ -1,0 +1,13 @@
+###Azure Basic command
+
+#first connect to azure console
+
+#Login in the Azure portal and Connect to console
+
+Connect-AzAccount -UseDeviceAuthentication
+
+#list of user in azure
+Get-AzAdUser
+
+#Specific user in Azure
+Get-AzAdUser -displayName $UserName |Select *
