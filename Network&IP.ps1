@@ -1,3 +1,4 @@
+##################
 Write-host "Public IP Address"
 
 New-AzPublicIpAddress -Name "PIP-Demo" -ResourceGroupName "RG-DemoApp-EastUS" -Location "EastUS" -AllocationMethod Static -Sku Standard
